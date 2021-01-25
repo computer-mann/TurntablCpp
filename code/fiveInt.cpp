@@ -63,7 +63,7 @@ string modeCal(int a,int b,int c,int d,int e)
     int largest=noOfNumbers[0];
     int tempIndex = 0;
     string somethingChanged="no";
-    for(int i=1;i<5;i++)
+    for(int i=1; i<5; i++)
     {
         if(noOfNumbers[i] > themode)
         {
@@ -85,11 +85,30 @@ string modeCal(int a,int b,int c,int d,int e)
 
 
 }
-//The middle number
+//The middle number from a sorted set😂😂😂😂😂😂😂
 int medianCal(int a,int b,int c,int d,int e)
 {
-    //Since the count of the numbers are odd
-    //i can just return the middle number.
+    int newarray[5]={a,b,c,d,e};
+    int temp;
+    for(int i=0;i < 5;i++)
+    {
+        for(int j= i+1; j < 5;j++)
+        {
+          if(newarray[i] > newarray[j])
+          {
+              temp=newarray[i];
+              newarray[i]=newarray[j];
+              newarray[j]=temp;
+          }
 
-    return c;
+        }
+    }
+
+    // for(int i=0 ; i <5 ;i++)
+    // {
+    //     cout << newarray[i] << "  ";
+    // }
+    
+//Since the numbers of numbers will always be odd,I can just return the middle number.
+    return newarray[2];
 }
