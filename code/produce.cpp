@@ -29,7 +29,7 @@ int main()
         cout << "___________________________________________________________________odd" << endl;
         notDivisiblebythenumber(number);
     }
-    
+    cout << "Done. \n";
     return 0;
 
 }
@@ -51,18 +51,18 @@ void rowMultiplication(int number)
 
 void notDivisiblebythenumber(int number)
 {
-    cout << "jfshjd" << endl;
     int delimiter=1;
-    int start=0;
-    while(delimiter <=5)
+    int start=1; //start is the number that the compiler is currently on
+    while(delimiter < 31)
     {
-        if(start % number != 0)
+     // cout << "jfshjd" << endl;
+        if(start % number > 0)
         {
-            cout << start << endl;
+          cout << start << endl;
+            //cout << delimiter << endl;
             delimiter++;
-            cout << delimiter << endl;
-            start++;
         }
+            start++;
     }
     
 }
