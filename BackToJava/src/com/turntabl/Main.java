@@ -1,9 +1,10 @@
-package com.company;
+package com.turntabl;
 
 
 import java.util.Scanner;
 
 public class Main {
+    //create static files for the different question numbers
 
     public static void main(String[] args) {
 	// write your code here
@@ -12,7 +13,9 @@ public class Main {
 
         String username=scanner.nextLine();
 
-        System.out.println();
+        System.out.println(username);
 
     }
+
+
 }
