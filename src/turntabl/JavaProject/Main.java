@@ -1,4 +1,4 @@
-package com.JavaProject;
+package turntabl.JavaProject;
 
 public class Main {
 
