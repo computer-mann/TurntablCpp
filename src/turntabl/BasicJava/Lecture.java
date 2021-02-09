@@ -16,19 +16,14 @@ public class Lecture {
     public double getHighestAverageGrade() {
 
         double highestAverageGrade = 0;
-
         double averageGrade = 0;
-
-        for (int i = 0; i < students.size(); i++) {
-
-            averageGrade = students.get(i).getAverageGrade();
-
-            if (averageGrade > highestAverageGrade)
-                highestAverageGrade = averageGrade;
-
+        for(Student stu:students){
+            if(stu.getAverageGrade() > highestAverageGrade){
+                highestAverageGrade=stu.getAverageGrade();
+            }
         }
-
         return highestAverageGrade;
+
     }
 
 }

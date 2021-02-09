@@ -3,19 +3,18 @@ package turntabl.Inheritance;
 
 
 import turntabl.BasicJava.Student;
+import turntabl.Enums.Level;
 
 import java.util.List;
 
 public class NaughtyStudent extends Student {
 
-    public NaughtyStudent(List<Double> studentGrades) {
-        super(studentGrades);
+    public NaughtyStudent(List<Double> studentGrades, String name, Level level) {
+        super(studentGrades,name,level);
     }
 
-    public double hack() {
-        double trueAverageGrade = this.getAverageGrade();
-        double increase = trueAverageGrade * 0.1;
-        double falseAverageGrade = trueAverageGrade + increase;
-        return falseAverageGrade;
+    @Override
+    public double getAverageGrade() {
+        return super.getAverageGrade() + (super.getAverageGrade()* 0.1);
     }
 }

@@ -1,4 +1,5 @@
 package turntabl.Enums;
 
-public enum HasLevel {
+public interface HasLevel {
+    Level hasLevel();
 }
